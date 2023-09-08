@@ -1,5 +1,4 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import BaseLayout from "@/components/layout/BaseLayout";
 import dynamic from "next/dynamic";
 import { FC } from "react";
 
@@ -9,13 +8,9 @@ const HomePage: FC = () => {
   });
 
   return (
-    <>
-      <Header />
-      <main>
-        <Products />
-      </main>
-      <Footer />
-    </>
+    <BaseLayout>
+      <Products />
+    </BaseLayout>
   );
 };
 

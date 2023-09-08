@@ -10,7 +10,7 @@ const Header: FC = () => {
         <h1 className={styles.header__logoWrap}>
           <Image
             className={styles.header__logo}
-            src="images/logo.svg"
+            src="/images/logo.svg"
             alt="Furniture Design"
             loading="lazy"
             height={20}
