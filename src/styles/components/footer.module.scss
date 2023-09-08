@@ -1,42 +1,42 @@
-@use "../libs/vars/widthVars";
-@use "../libs/mixins/mediaMixins";
+@use '../libs/vars/widthVars';
+@use '../libs/mixins/mediaMixins';
 
 .footer {
-  width: 100vw;
   padding: 0 widthVars.$contentSidePadding;
+  width: 100vw;
 
   &__content {
-    padding: 20px 0;
-    margin: 0 auto;
-    max-width: widthVars.$contentMaxWidth;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin: 0 auto;
+    max-width: widthVars.$contentMaxWidth;
+    padding: 20px 0;
 
     @include mediaMixins.media {
-      flex-direction: column;
-      justify-content: center;
       align-items: flex-start;
+      flex-direction: column;
       gap: 10px;
+      justify-content: center;
     }
   }
 
   &__lists {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 30px;
   }
 
   &__link {
-    text-transform: uppercase;
+    color: #333;
     font-size: 12px;
     line-height: 1.2;
-    color: #333333;
+    text-transform: uppercase;
   }
 
   &__copyright {
+    color: #333;
     font-size: 10px;
     line-height: 1.1;
-    color: #333333;
   }
 }

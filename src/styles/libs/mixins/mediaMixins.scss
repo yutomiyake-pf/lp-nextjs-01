@@ -1,4 +1,5 @@
-@use "../vars/widthVars";
+@use '../vars/widthVars';
+
 @mixin media($breakPoint: widthVars.$spBreakpoint) {
   @media (max-width: $breakPoint) {
     @content;
