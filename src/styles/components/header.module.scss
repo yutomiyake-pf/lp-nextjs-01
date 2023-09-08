@@ -1,0 +1,42 @@
+@use "../libs/vars/widthVars.scss";
+
+$hamburgerBackgroundColor: #333333;
+
+.header {
+  width: 100vw;
+  padding: 0 widthVars.$contentSidePadding;
+
+  &__content {
+    max-width: widthVars.$contentMaxWidth;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logoWrap {
+    padding: 30px 0;
+  }
+
+  &__logo {
+    width: 180px;
+    height: 20px;
+    display: block;
+  }
+
+  &__hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10px;
+    width: 30px;
+
+    &::before,
+    &::after {
+      content: "";
+      background-color: $hamburgerBackgroundColor;
+      height: 2px;
+      width: 100%;
+    }
+  }
+}
