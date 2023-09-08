@@ -1,4 +1,5 @@
 @use "../libs/vars/widthVars";
+@use "../libs/mixins/mediaMixins";
 
 .footer {
   width: 100vw;
@@ -11,6 +12,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mediaMixins.media {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 10px;
+    }
   }
 
   &__lists {

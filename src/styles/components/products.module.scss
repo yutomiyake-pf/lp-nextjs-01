@@ -1,4 +1,5 @@
 @use "../libs/vars/widthVars";
+@use "../libs/mixins/mediaMixins.scss";
 
 .products {
   padding: 0 widthVars.$contentSidePadding;
@@ -25,6 +26,10 @@
   &__productWrap {
     width: 23%;
     margin-bottom: 40px;
+
+    @include mediaMixins.media {
+      width: 48%;
+    }
   }
 
   &__productLinkWrap {
