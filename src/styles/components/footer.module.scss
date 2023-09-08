@@ -1,0 +1,33 @@
+@use "../libs/vars/widthVars";
+
+.footer {
+  width: 100vw;
+  padding: 0 widthVars.$contentSidePadding;
+
+  &__content {
+    margin: 0 auto;
+    max-width: widthVars.$contentMaxWidth;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__lists {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #333333;
+  }
+
+  &__copyright {
+    font-size: 10px;
+    line-height: 1.1;
+    color: #333333;
+  }
+}
