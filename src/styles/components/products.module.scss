@@ -1,0 +1,48 @@
+@use "../libs/vars/widthVars";
+
+.products {
+  padding: 0 widthVars.$contentSidePadding;
+  width: 100vw;
+
+  &__content {
+    margin: 0 auto;
+    max-width: widthVars.$contentMaxWidth;
+  }
+
+  &__sectionTitle {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  &__listWrap {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__productWrap {
+    width: 23%;
+    margin-bottom: 40px;
+  }
+
+  &__productLinkWrap {
+    display: block;
+  }
+
+  &__productImage {
+    display: block;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__infoWrap {
+    margin-top: 10px;
+    color: #333333;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.2;
+  }
+}

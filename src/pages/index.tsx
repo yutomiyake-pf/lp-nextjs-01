@@ -1,14 +1,19 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import dynamic from "next/dynamic";
 import { FC } from "react";
 
 const HomePage: FC = () => {
+  const Products = dynamic(() => import("@/components/Products"), {
+    ssr: false,
+  });
+
   return (
     <>
       <Header />
-      <section>
-        <h2>Product</h2>
-      </section>
+      <main>
+        <Products />
+      </main>
       <Footer />
     </>
   );
