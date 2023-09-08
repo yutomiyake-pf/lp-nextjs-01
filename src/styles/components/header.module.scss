@@ -1,17 +1,17 @@
-@use "../libs/vars/widthVars.scss";
+@use "../libs/vars/widthVars";
 
-$hamburgerBackgroundColor: #333333;
+$hamburgerBackgroundColor: #333;
 
 .header {
-  width: 100vw;
   padding: 0 widthVars.$contentSidePadding;
+  width: 100vw;
 
   &__content {
-    max-width: widthVars.$contentMaxWidth;
-    margin: 0 auto;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin: 0 auto;
+    max-width: widthVars.$contentMaxWidth;
   }
 
   &__logoWrap {
@@ -19,22 +19,22 @@ $hamburgerBackgroundColor: #333333;
   }
 
   &__logo {
-    width: 180px;
-    height: 20px;
     display: block;
+    height: 20px;
+    width: 180px;
   }
 
   &__hamburger {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 10px;
+    justify-content: space-between;
     width: 30px;
 
     &::before,
     &::after {
-      content: "";
       background-color: $hamburgerBackgroundColor;
+      content: "";
       height: 2px;
       width: 100%;
     }
