@@ -1,5 +1,5 @@
-@use '../libs/vars/widthVars';
-@use '../libs/mixins/mediaMixins.scss';
+@use "../libs/vars/widthVars";
+@use "../libs/mixins/mediaMixins";
 
 .products {
   padding: 0 widthVars.$contentSidePadding;

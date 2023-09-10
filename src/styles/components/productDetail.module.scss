@@ -1,0 +1,41 @@
+@use "../libs/vars/widthVars";
+@use "../libs/mixins/mediaMixins";
+
+.productDetail {
+  padding: 0 widthVars.$contentSidePadding;
+  width: 100vw;
+
+  &__content {
+    max-width: widthVars.$contentMaxWidth;
+    margin: 0 auto;
+    background-color: pink;
+  }
+
+  &__sectionTitle {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.1;
+  }
+
+  &__infoWrap {
+    max-width: 70%;
+    margin-top: 30px;
+    display: flex;
+    gap: 60px;
+  }
+
+  &__image {
+    width: 400px;
+    height: 400px;
+    display: block;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__definitionList {
+  }
+}
