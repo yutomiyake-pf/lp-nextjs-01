@@ -44,11 +44,6 @@ const Header: FC = () => {
                 Company
               </Link>
             </li>
-            <li>
-              <Link className={styles.header__navLink} href="/contact">
-                Contact
-              </Link>
-            </li>
           </ul>
         </nav>
         <button

@@ -1,8 +1,8 @@
 import BaseLayout from "@/components/layout/BaseLayout";
+import { NextPage } from "next";
 import dynamic from "next/dynamic";
-import { FC } from "react";
 
-const HomePage: FC = () => {
+const HomePage: NextPage = () => {
   const Products = dynamic(() => import("@/components/Products"), {
     ssr: false,
   });

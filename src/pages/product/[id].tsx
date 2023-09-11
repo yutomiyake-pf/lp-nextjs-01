@@ -1,7 +1,6 @@
 import BaseLayout from "@/components/layout/BaseLayout";
 import { products } from "@/utils/vars/productVars";
-import { GetStaticProps } from "next";
-import { FC } from "react";
+import { GetStaticProps, NextPage } from "next";
 
 import ProductDetail from "@/components/ProductDetail";
 
@@ -17,7 +16,7 @@ interface Props {
     image: string;
   };
 }
-const ProductDetailPage: FC<Props> = ({ product }) => {
+const ProductDetailPage: NextPage<Props> = ({ product }) => {
   return (
     <BaseLayout>
       <ProductDetail product={product} />

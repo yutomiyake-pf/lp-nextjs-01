@@ -1,13 +1,14 @@
-import Company from "@/components/Company";
 import BaseLayout from "@/components/layout/BaseLayout";
 import { NextPage } from "next";
 
-const CompanyPage: NextPage = () => {
+const AboutPage: NextPage = () => {
   return (
     <BaseLayout>
-      <Company />
+      <div>
+        <h1>About Page</h1>
+      </div>
     </BaseLayout>
   );
 };
 
-export default CompanyPage;
+export default AboutPage;
