@@ -1,3 +1,5 @@
 ### NextJSでのLP制作
 
-####  制作途中....
+#### 環境構築
+1. `npm run install`
+2. `npm run dev`
