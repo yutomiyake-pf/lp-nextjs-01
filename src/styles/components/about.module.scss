@@ -1,10 +1,9 @@
 @use "../libs/vars/widthVars";
 @use "../libs/mixins/mediaMixins";
 
-.company {
+.about {
   padding: 0 widthVars.$contentSidePadding;
   width: 100vw;
-
   &__content {
     margin: 0 auto;
     max-width: widthVars.$contentMaxWidth;
@@ -16,29 +15,12 @@
     line-height: 1.1;
   }
 
-  &__definitionList {
+  &__textWrap {
     margin: 30px 0 50px 0;
-    max-width: 650px;
-  }
-
-  &__definitionWrap {
     display: flex;
-    border-bottom: 1px solid #dcdbdb;
+    flex-direction: column;
+    gap: 30px;
     font-size: 14px;
-    line-height: 1.5;
-    padding: 20px 0;
-
-    @include mediaMixins.media {
-      flex-direction: column;
-      gap: 10px;
-    }
-  }
-
-  &__definitionTerm {
-    width: 30%;
-  }
-
-  &__definitionDes {
-    width: 70%;
+    line-height: 1.9;
   }
 }

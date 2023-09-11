@@ -1,12 +1,12 @@
 import BaseLayout from "@/components/layout/BaseLayout";
 import { NextPage } from "next";
 
+import About from "@/components/About";
+
 const AboutPage: NextPage = () => {
   return (
     <BaseLayout>
-      <div>
-        <h1>About Page</h1>
-      </div>
+      <About />
     </BaseLayout>
   );
 };
