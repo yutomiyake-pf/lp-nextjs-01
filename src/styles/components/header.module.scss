@@ -44,5 +44,61 @@ $hamburgerBackgroundColor: #333;
       height: 2px;
       width: 100%;
     }
+
+    &.close {
+      position: fixed;
+      z-index: zIndexVars.$headerNavMenu;
+      height: 30px;
+      top: 30px;
+      right: 30px;
+      &::before,
+      &::after {
+        position: absolute;
+        top: 50%;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  // navメニュー
+  &__navMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: zIndexVars.$headerNavMenu;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__navLinks {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__navLink {
+    font-size: 18px;
+    line-height: 1;
+    color: $hamburgerBackgroundColor;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      text-decoration: underline;
+      color: rgb($hamburgerBackgroundColor, 0.8);
+    }
   }
 }
