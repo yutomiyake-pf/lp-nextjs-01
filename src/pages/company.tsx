@@ -1,12 +1,11 @@
+import Company from "@/components/Company";
 import BaseLayout from "@/components/layout/BaseLayout";
 import { FC } from "react";
 
 const company: FC = () => {
   return (
     <BaseLayout>
-      <section>
-        <h2>company</h2>
-      </section>
+      <Company />
     </BaseLayout>
   );
 };
