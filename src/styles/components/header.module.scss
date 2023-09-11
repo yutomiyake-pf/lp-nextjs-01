@@ -95,6 +95,7 @@ $hamburgerBackgroundColor: #333;
     line-height: 1;
     color: $hamburgerBackgroundColor;
     transition: color 0.3s ease-in-out;
+    text-transform: uppercase;
 
     &:hover {
       text-decoration: underline;

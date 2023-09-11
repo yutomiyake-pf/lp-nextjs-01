@@ -12,14 +12,16 @@ const Header: FC = () => {
     <header className={styles.header}>
       <div className={styles.header__content}>
         <h1 className={styles.header__logoWrap}>
-          <Image
-            className={styles.header__logo}
-            src="/images/logo.svg"
-            alt="Furniture Design"
-            loading="lazy"
-            height={20}
-            width={180}
-          />
+          <Link href={"/"}>
+            <Image
+              className={styles.header__logo}
+              src="/images/logo.svg"
+              alt="Furniture Design"
+              loading="lazy"
+              height={20}
+              width={180}
+            />
+          </Link>
         </h1>
         <nav
           className={`${styles.header__navMenu} ${
