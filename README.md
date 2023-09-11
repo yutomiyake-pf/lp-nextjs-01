@@ -1,3 +1,4 @@
 ### NextJSでのLP制作
 
-####  制作途中....
+####  vercel
+https://nextjs-clone-01.vercel.app/
