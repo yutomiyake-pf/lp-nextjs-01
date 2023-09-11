@@ -20,7 +20,6 @@ interface Props {
   };
 }
 const ProductDetailPage: FC<Props> = ({ product }) => {
-  console.log(product);
   return (
     <BaseLayout>
       <section className={styles.productDetail}>
@@ -37,28 +36,38 @@ const ProductDetailPage: FC<Props> = ({ product }) => {
               height={400}
             />
             <div className={styles.productDetail__info}>
-              <p>{product.description}</p>
-              <p>
+              <p className={styles.productDetail__des}>{product.description}</p>
+              <p className={styles.productDetail__price}>
                 &yen; {product.price.toLocaleString()}
                 <small> +tax</small>
               </p>
-              <dl className={styles.productDetail__definitionList}>
-                <div>
-                  <dt>Size:</dt>
-                  <dd>{product.size}</dd>
+              <dl className={styles.productDetail__descriptionList}>
+                <div className={styles.productDetail__descriptionWrap}>
+                  <dt className={styles.productDetail__term}>Size:</dt>
+                  <dd className={styles.productDetail__definition}>
+                    {product.size}
+                  </dd>
                 </div>
-                <div>
-                  <dt>Color:</dt>
-                  <dd>{product.color}</dd>
+                <div className={styles.productDetail__descriptionWrap}>
+                  <dt className={styles.productDetail__term}>Color:</dt>
+                  <dd className={styles.productDetail__definition}>
+                    {product.color}
+                  </dd>
                 </div>
-                <div>
-                  <dt>Material:</dt>
-                  <dd>{product.Material}</dd>
+                <div className={styles.productDetail__descriptionWrap}>
+                  <dt className={styles.productDetail__term}>Material:</dt>
+                  <dd className={styles.productDetail__definition}>
+                    {product.Material}
+                  </dd>
                 </div>
               </dl>
             </div>
           </div>
-          <Link href="/">Back To Products</Link>
+          <div className={styles.productDetail__linkWrap}>
+            <Link className={styles.productDetail__link} href="/">
+              Back To Products
+            </Link>
+          </div>
         </div>
       </section>
     </BaseLayout>

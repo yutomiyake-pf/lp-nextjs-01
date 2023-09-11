@@ -8,7 +8,6 @@
   &__content {
     max-width: widthVars.$contentMaxWidth;
     margin: 0 auto;
-    background-color: pink;
   }
 
   &__sectionTitle {
@@ -18,7 +17,7 @@
   }
 
   &__infoWrap {
-    max-width: 70%;
+    max-width: 80%;
     margin-top: 30px;
     display: flex;
     gap: 60px;
@@ -36,6 +35,39 @@
     justify-content: space-between;
   }
 
-  &__definitionList {
+  &__des {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  &__price {
+    font-size: 12px;
+    line-break: 1.7;
+  }
+
+  &__descriptionList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__descriptionWrap {
+    display: flex;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  &__term {
+    width: 30%;
+  }
+
+  &__linkWrap {
+    text-align: center;
+    margin: 60px 0;
+  }
+
+  &__link {
+    color: #333333;
+    line-height: 1;
   }
 }
